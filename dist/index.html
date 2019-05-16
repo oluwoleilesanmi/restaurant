@@ -11,80 +11,97 @@
 
   <body>
     <div id="content"></div>
-    <h1>Restaurant <sup>[Healthy & Sweet]</sup></h1>
-    <h2>Here to serve you</h2>
-    <div class="restaurant">
-      <input type="radio" id="tab1" name="tab" checked />
-      <label class="tabButton" for="tab1">Home</label>
+    <main>
+      <div class="restaurant">
+        <header>
+          <h1>Restaurant <sup>[Healthy & Sweet]</sup></h1>
+          <h2>Here to serve you</h2>
+        </header>
 
-      <div class="tab">
-        <div class="content">
-          <h3>Home</h3>
-          <img src="" alt="Restaurant" />
-          <p>
-            We have being in the industry since 1800, we have served over 1
-            million customers nationwide, always here for customers.
-          </p>
-        </div>
+        <nav class="navbar">
+          <a href="">Home</a>
+          <a href="">Menu</a>
+          <a href="">Contact</a>
+        </nav>
+
+        <section>
+          <div class="home-content">
+            <img src="./images/restaurant.jpg" alt="Restaurant" />
+            <p>
+              We have being in the industry since 1800, we have served over 1
+              million customers nationwide, always here for customers.Lorem
+              Ipsum has been the text ever since the 1500s, when an
+            </p>
+          </div>
+
+          <div class="menu-content">
+            <ul class="menu-list">
+              <li class="meal-one">
+                <img src="./images/lemonade.jpg" alt="image1" />
+                <p>
+                  Lorem Ipsum has been the text ever since the 1500s, when an
+                  unknown printer took a galley of type and scrambled it to make
+                  a
+                </p>
+              </li>
+              <li class="meal-two">
+                <img src="./images/lemonade.jpg" alt="image2" />
+                <p>
+                  Lorem Ipsum has been the text ever since the 1500s, when an
+                  unknown printer took a galley of type and scrambled it to make
+                  a
+                </p>
+              </li>
+              <li class="meal-three">
+                <img src="./images/lemonade.jpg" alt="image3" />
+                <p>
+                  Lorem Ipsum has been the text ever since the 1500s, when an
+                  unknown printer took a galley of type and scrambled it to make
+                  a
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="form-content">
+            <form>
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="nigeria">Nigeria</option>
+                <option value="canada">Canada</option>
+                <option value="kenya">Kenya</option>
+              </select>
+
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height:200px"
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
       </div>
-
-      <input type="radio" id="tab2" name="tab" />
-      <label class="tabButton" for="tab2">Menu</label>
-
-      <div class="tab">
-        <div class="content">
-          <h3>Menu</h3>
-          <p>
-            Lorem Ipsum has been the text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the
-            leap into electronic typesetting, remaining essentially unchanged.
-          </p>
-          <p>
-            Lorem Ipsum has been the text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the
-            leap into electronic typesetting, remaining essentially unchanged.
-          </p>
-          <p>
-            Lorem Ipsum has been the text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the
-            leap into electronic typesetting, remaining essentially unchanged.
-          </p>
-        </div>
-      </div>
-
-      <input type="radio" id="tab3" name="tab" />
-      <label class="tabButton" for="tab3">Contact</label>
-
-      <div class="tab">
-        <div class="content">
-          <h3>Contact</h3>
-          <p>
-            Lorem Ipsum has been the industry's standard dummy, when an unknown
-            printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the
-            leap into electronic typesetting, remaining essentially unchanged.
-          </p>
-          <p>
-            Lorem Ipsum has been the industry's standard dummy, when an unknown
-            printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the
-            leap into electronic typesetting, remaining essentially unchanged.
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer
-            took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged.
-          </p>
-        </div>
-      </div>
-    </div>
-    <script src="main.js"></script>
+      <script src="main.js"></script>
+    </main>
   </body>
 </html>
