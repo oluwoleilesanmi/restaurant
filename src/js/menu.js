@@ -3,9 +3,7 @@ import { meals } from "./constants";
 const menu = contentDiv => {
   const page = document.createElement("div");
   page.className = "innerDiv";
-  const title = document.createElement("h2");
-  title.innerHTML = "Meals";
-  page.appendChild(title);
+  page.appendChild(title());
   page.appendChild(populateUl());
   contentDiv.appendChild(page);
 };
@@ -18,6 +16,12 @@ const populateUl = () => {
     ul.appendChild(li);
   }
   return ul;
+};
+
+const title = () => {
+  const title = document.createElement("h2");
+  title.innerHTML = "Meals";
+  return title;
 };
 
 export { menu };

@@ -7,12 +7,9 @@ const createBtn = (name, id) => {
 
 const navigation = () => {
   const nav = document.createElement("div");
-  const homeNav = createBtn("Home", "home-nav");
-  const menuNav = createBtn("Menu", "menu-nav");
-  const contactNav = createBtn("Contact", "contact-nav");
-  nav.appendChild(homeNav);
-  nav.appendChild(menuNav);
-  nav.appendChild(contactNav);
+  nav.appendChild(createBtn("Home", "home-nav"));
+  nav.appendChild(createBtn("Menu", "menu-nav"));
+  nav.appendChild(createBtn("Contact", "contact-nav"));
   return nav;
 };
 
